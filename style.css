@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+header{
+  display: flex;
+  justify-content: end;
+  height: 5vh; 
+}
+.nav-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 12px;
+}
+.nav-bar li{
+  padding: 0 8px;
+}
+.nav-bar li a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: black;
+}
+.nav-bar li a:hover{
+  text-decoration: underline;
+}
+.nav-bar li img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+.nav-bar li button{
+  background-color: #1a73e8;
+  color: white;
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+}
+.nav-bar li button:hover{
+  cursor: pointer;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+.google{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 130px;
+}
+.buscador{
+  display: flex;
+  transition: box-shadow 0.1s ease;
+  border-radius: 90px;
+}
+.buscador:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.buscador .lupa{
+  width: 40px;
+  height: 45px;
+  filter: drop-shadow(2px 2px 2px 2px gray);
+  padding: 10px 0 10px 14px;
+  border-top: 1px solid #dfe1e5;
+  border-bottom: 1px solid #dfe1e5;
+  border-left: 1px solid #dfe1e5;
+  border-radius: 90px 0 0 90px;  
+}
+.buscador input{
+  width: 450px;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #dfe1e5;
+  border-bottom: 1px solid #dfe1e5;
+  outline: none;
+}
+.buscador .micro{
+  width: 40px;
+  height: 45px;
+  object-fit: cover;
+  padding: 10px 14px 10px 0;
+  border-top: 1px solid #dfe1e5;
+  border-bottom: 1px solid #dfe1e5;
+  border-right: 1px solid #dfe1e5;
+  border-radius: 0 90px 90px 0;
+}
+.buscador .micro:hover{
+  cursor: pointer;
+}
+.botones{
+  margin-top: 24px;
+}
+.botones button{
+  background-color: #f8f9fa;
+  margin:10px;
+  width: 160px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+}
+.botones button:hover{
+  border:solid 1px #DFE1E5;
+  cursor: pointer;
+}
+footer{
+  position: absolute;
+  height: 10vh;
+  width: 100%;
+  bottom: 0;
+  background-color: #f2f2f2;
+}
+.pais{
+  display: flex;
+  align-items: center;
+  color: #1F1F1F;
+  height: 50px;
+  font-size: 1.6rem;
+  padding: 10px 0 10px 24px;
+  border-bottom: 1px solid #D2D2D2;
+}
+.terminos{
+  display: flex;
+  justify-content: space-between;
+}
+.terminos ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 16px 36px 0 36px;
+}
+.terminos ul li{
+  display: flex;
+  align-items: center;
+}
+.terminos ul li a{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #1F1F1F;
+  padding: 0 16px;
+}
+.terminos ul li a:hover{
+  text-decoration:underline ;
+}
